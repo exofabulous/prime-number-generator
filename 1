@@ -1,0 +1,36 @@
+Console.WriteLine("please enter a positive number");
+            string userinput = Console.ReadLine();
+            double number = double.Parse(userinput);
+            
+
+            for (int i = 1; i < number; i++)
+            {
+                double snumer = Math.Sqrt(i);
+                double n1 = Math.Round(snumer);
+                while (n1 > 2)
+                {
+                    
+                    n1 = n1 - 1;
+                    
+                    
+                    
+                    if ( i % n1 == 0 )
+                    {
+                        
+                        break;
+                    }
+                    
+                     if (n1 == 2)   
+                        { 
+                            Console.WriteLine(i);
+                     
+                     
+
+
+                        
+                    }
+                    
+
+                }
+
+            }
